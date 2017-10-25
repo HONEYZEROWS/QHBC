@@ -1,0 +1,159 @@
+
+
+html, body { 
+	position: relative;
+	padding: 0; 
+	margin: 0; 
+	height: 100%; 
+	font-size: 16px; 
+	background-repeat: no-repeat; 
+	background-position: left top; 
+	background-color: #242645; 
+	color: #fff; 
+	font-family: 'Source Sans Pro'; 
+	background-size: cover; 
+	background-image: url(../img/bg.png); 
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}
+.pg-canvas{
+	position: absolute;
+}
+body .login 
+{
+	max-width: 360px;
+  position: relative;
+  margin: 0 auto ;
+  padding: 10% 0 0;
+  /*width: 240px;*/
+  /*border-top: 2px solid #D8312A;*/
+  /*height: 300px;*/
+  /*position: absolute;
+  left: 0;
+  right: 0; 
+  top: 0;
+  bottom: 0;*/
+  /*padding: 100px 40px 40px 40px;*/
+  
+}
+
+body .login_title {
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.hall_icon{
+	margin-right: 20px;
+	width: 36px;
+	height: 36px;
+	vertical-align:top;
+}
+
+body .login_fields {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 0;
+  background: url(../img/login-bg.png)  no-repeat;
+  background-size: 100% 100%;
+}
+.login_name{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 30px;
+	text-align: center;
+}
+body .login_fields__user, body .login_fields__password {
+  position: relative;
+  width: 80%;
+  height: 36px;
+  line-height: 36px;
+  border: 2px solid #1b73f8;
+  margin: 0 auto 20px;
+  font-size: 0;
+}
+body .login_fields .icon {
+	float: left;
+  width: 15%;
+  height: 36px;
+  text-align: center;
+}
+body .login_fields .icon img{
+  width: 20px;
+  height: 26px;
+  margin-top: 5px;
+}
+
+body .login_fields input[type='text'], body .login_fields input[type='password'] {
+  padding:0;
+  color: #afb1be;
+  width: 84%;
+  height: 36px;
+  border: none;
+  outline: none;
+  font-family: 'Gudea', sans-serif;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+body .login_fields__submit {
+  width: 80%;
+  height: 36px;
+  border: 2px solid #1186f9;
+  margin: 0px auto 0;
+}
+
+body .login_fields__submit input {
+  width: 100%;
+  height: 36px;
+  color: #4FA1D9;
+  background: #1186f9;
+  border:none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Color Schemes */
+.love {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 11px;
+  font-weight: normal;
+}
+.love p {
+  color: white;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+.love a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.love img {
+  position: relative;
+  top: 3px;
+  margin: 0px 4px;
+  width: 10px;
+}
+
+.brand {
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+}
+.brand img {
+  width: 30px;
+}

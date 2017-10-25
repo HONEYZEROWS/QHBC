@@ -1,0 +1,1071 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>万达影城</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../../plugins/iCheck/all.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../../plugins/colorpicker/bootstrap-colorpicker.min.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/select2.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-datetimepicker.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../common/css/style.css"/>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <!--<span class="logo-mini"><b>万达智慧院线云平台</b></span>-->
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>万达智慧院线云平台</b></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#"><span class="header-time"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="header-tem">0</span>℃</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <!--<div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>-->
+        <div class="info">
+          <p>万达客户</p>
+          <a href="#"><i class="fa fa-circle text-green"></i> 在线</a>
+        </div>
+      </div>
+      
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <!--<li class="header">MAIN NAVIGATION</li>-->
+        <li class="active treeview">
+          <a href="index.html">
+            <i class="fa fa-home"></i> <span>万达影城</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>设备</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="hall.html?id=266,301"><i class="fa fa-circle-o"></i> 1号厅</a></li>
+            <li><a href="hall.html?id=268,302"><i class="fa fa-circle-o"></i> 2号厅</a></li>
+            <li><a href="hall.html?id=274,303"><i class="fa fa-circle-o"></i> 3号厅</a></li>
+            <li><a href="hall.html?id=280,304"><i class="fa fa-circle-o"></i> 4号厅 </a></li>
+            <li><a href="hall.html?id=284,305"><i class="fa fa-circle-o"></i> 5号厅 </a></li>
+            <li><a href="hall.html?id=282,306"><i class="fa fa-circle-o"></i> 6号厅 </a></li>
+            <li><a href="hall.html?id=276,307"><i class="fa fa-circle-o"></i> 7号厅 </a></li>
+            <li><a href="hall.html?id=264,308"><i class="fa fa-circle-o"></i> 8号厅 </a></li>
+            <li><a href="hall.html?id=262,309"><i class="fa fa-circle-o"></i> 9号厅 </a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-table"></i>
+            <span>数据</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          	<li><a href="pages/forms/halldata.html"><i class="fa fa-circle-o"></i> 万达影厅</a></li>
+            <li><a href="hall.html?id=266,301"><i class="fa fa-circle-o"></i> 空调机组</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: auto;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+                万达影城
+        <small>V 1.0</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 万达影城</a></li>
+        <li class="active">数据</li>
+        <li class="active devname">万达影厅</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- SELECT2 EXAMPLE -->
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <div class="col-md-3">
+	        	<div class="form-group">
+	            <label>开始时间:</label>
+	
+	            <div class="input-group date">
+	              <div class="input-group-addon">
+	                <i class="fa fa-calendar"></i>
+	              </div>
+	              <input type="text" class="form-control pull-right" id="start">
+	            </div>
+	            <!-- /.input group -->
+	          </div>
+	          <!-- /.form group -->
+	        </div>
+	        <div class="col-md-3">
+	        	<div class="form-group">
+	            <label>结束时间:</label>
+	
+	            <div class="input-group date">
+	              <div class="input-group-addon">
+	                <i class="fa fa-calendar"></i>
+	              </div>
+	              <input type="text" class="form-control pull-right" id="end">
+	            </div>
+	            <!-- /.input group -->
+	          </div>
+	          <!-- /.form group -->
+	        </div>
+	        <div class="col-md-3">
+	        	<div class="form-group">
+	            <label>设备列表:</label>
+							<select class="form-control select2" id="devid" style="width: 100%;">
+	              <option value="266" selected="selected">1号厅</option>
+								<option value="268">2号厅</option>
+								<option value="274">3号厅</option>
+								<option value="280">4号厅</option>
+								<option value="284">5号厅</option>
+								<option value="282">6号厅</option>
+								<option value="276">7号厅</option>
+								<option value="264">8号厅</option>
+								<option value="262">9号厅</option>
+								<option value="260">大堂</option>
+								<option value="278">北走廊1</option>
+								<option value="272">北走廊2</option>
+								<option value="290">南走廊1</option>
+								<option value="270">南走廊2</option>
+								<option value="286">放映区</option>
+								<option value="288">办公室</option>
+	            </select>
+	          </div>
+	          <!-- /.form group -->
+	        </div>
+	        <div class="col-md-3">
+	        	<div class="form-group">
+	        		<label class="la">数据</label>
+	            <button type="button" class="btn btn-success margin-5" id="historydata_btn">查询</button>
+	            <button type="button" class="btn btn-success margin-5" id="historylist_btn">分析</button>
+	            <button type="button" class="btn btn-success margin-5" id="out_btn">导出</button>
+	            <!-- /.input group -->
+	          </div>
+	          <!-- /.form group -->
+	        </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body" style="padd ing: 10px 15px;">
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+            <tr>
+            	<th>编号</th>
+            	<th>设备名称</th>
+              <th>同步时间</th>
+              <th>温度</th>
+              <th>湿度</th>
+              <th>温度设定点</th>
+              <th>PM2.5</th>
+              <th>PM10</th>
+              <th>CO2</th>
+              <th>甲醛</th>
+            </tr>
+            </thead>
+          </table>
+          <div id="fenxi">
+          	<div class="row">
+          		<div class="col-md-6">
+          			<div id="tem" style="height: 250px;"></div>
+	          	</div>
+	          	<div class="col-md-6">
+	          		<div id="ppm" style="height: 250px;"></div>
+	          	</div>
+          	</div>
+          	<div class="row">
+          		<div class="col-md-6">
+          			<div id="rh" style="height: 250px;"></div>
+	          	</div>
+	          	<div class="col-md-6">
+	          		<div id="pm" style="height: 250px;"></div>
+	          	</div>
+          	</div>
+          </div>
+      </div>
+      <!-- /.box -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>蔚蓝数据 Azure City (Beijing) Technologies Inc.</strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                <p>New phone +1(800)555-1234</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                <p>nora@example.com</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                <p>Execution time 5 seconds</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="label label-danger pull-right">70%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Update Resume
+                <span class="label label-success pull-right">95%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Laravel Integration
+                <span class="label label-warning pull-right">50%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Back End Framework
+                <span class="label label-primary pull-right">68%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Allow mail redirect
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Other sets of options are available
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Expose author name in posts
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Allow the user to show his name in blog posts
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Show me as online
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Turn off notifications
+              <input type="checkbox" class="pull-right">
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Delete chat history
+              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+            </label>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="../../plugins/select2/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="../../plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../../plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+<!--datatables-->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables/dataTables.bootstrap.min.js"></script>
+
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<!--<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>-->
+<script src="../../common/js/bootstrap-datetimepicker.min.js" charset = "UTF-8"></script>
+<script src="../../common/js/bootstrap-datetimepicker.zh-CN.js" charset = "UTF-8"></script>
+<!-- bootstrap color picker -->
+<script src="../../plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll 1.3.0 -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../../plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
+
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+<script src="../../common/js/shine.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<script src="../../common/js/common.js" charset = "UTF-8"></script>
+<!-- Page script -->
+<script>
+	
+	 function devicehistorysdata(devid, startdate, enddate,devname) {
+
+        $.ajax({
+            //要用post方式
+            type: "post",
+            //方法所在页面和方法名
+            url: 'http://123.56.156.91:8081/AppInterface/queryAllBzRecord?params={%22deviceId%22:'+ devid +',%22beginTime%22:%22' + startdate + '%22,%22endTime%22:%22' + enddate + '%22}',
+            dataType: "jsonp",
+            jsonp: "jsonpCallback",
+            success: function (data) {
+                if(data.data) {
+                    //查看返回的数据data
+                    
+                    var datas = data.data.reverse();
+                    //console.log(datas);
+                    var a = [];
+                    for (var i = 0; i < datas.length; i++) {
+                        var shuju = datas[i].data.split(",");
+                        a[i] = {
+                            'num': i+1,
+                            'name': devname,
+                            'devdata0': shuju[6],
+                            'devdata1': shuju[7],
+                            'devdata2': shuju[8],
+                            'devdata3': shuju[9],
+                            'devdata4': shuju[10],
+                            'devdata5': shuju[11],
+                            'devdata6': shuju[12],
+                            'deviceTime': datas[i].syncTime
+                        }
+                    }
+										$('#example1').DataTable({
+								      "paging": true,//是否显示分页,默认为true
+								      "lengthChange": false,//是否显示数据显示条数,默认为true,当数据小于每页的条数时也不显示
+								      "searching": false,//是否显示搜索,默认为true
+								      "ordering": false,//是否显示列的排序，默认为true
+								      "info": true,//是否显示表的信息，默认为true
+								      "autoWidth": true,//是否启动计算列宽
+								      //"scrollX": true,
+								      //"retrieve":true,
+								      "destroy":true,
+								      "language": {
+									        lengthMenu: '<select class="form-control input-xsmall">' + '<option value="1">1</option>' + '<option value="10">10</option>' + '<option value="20">20</option>' + '<option value="30">30</option>' + '<option value="40">40</option>' + '<option value="50">50</option>' + '</select>条记录',//左上角的分页大小显示。
+									        search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+									
+									        paginate: {//分页的样式内容。
+									            previous: "上一页",
+									            next: "下一页",
+									            first: "第一页",
+									            last: "最后"
+									        },
+									
+									        zeroRecords: "没有内容",//table tbody内容为空时，tbody的内容。
+									        //下面三者构成了总体的左下角的内容。
+									        info: "总共_PAGES_ 页_TOTAL_ 条，显示第_START_ 到第 _END_ ",//，筛选之后得到 _TOTAL_ 条，初始_MAX_ 条 ,左下角的信息显示，大写的词为关键字。
+									        infoEmpty: "0条记录",//筛选为空时左下角的显示。
+									        infoFiltered: ""//筛选之后的左下角筛选提示，
+									    },
+									    "data": a,
+									    "columns": [
+									    
+									    	{"data": "num","width": "40px"},
+									    	{"data": "name"},
+									    	{"data": "deviceTime","width": "150px"},
+									    	{"data": "devdata0"},
+									    	{"data": "devdata1"},
+									    	{"data": "devdata2"},
+									    	{"data": "devdata3"},
+									    	{"data": "devdata4"},
+									    	{"data": "devdata5"},
+									    	{"data": "devdata6"}
+									    ]
+								    });
+  									//$.fn.dataTable().fnReloadAjax();
+                    
+                }else{
+                    alert('此时间段没有数据');
+                }
+            },
+            error: function (err) {
+                alert(err);
+            }
+        });
+    }
+	 function formatDateTime(theDate) {
+
+	var _hour = theDate.getHours();
+	
+	var _minute = theDate.getMinutes();
+	
+	var _second = theDate.getSeconds();
+	
+	var _year = theDate.getFullYear()
+	
+	var _month = theDate.getMonth();
+	
+	var _date = theDate.getDate();
+	
+	if(_hour<10){_hour="0"+_hour ;}
+	
+	if(_minute<10){_minute="0"+_minute;  }
+	
+	if(_second<10){_second="0"+_second ; }
+	
+	if(_month < 9){_month = "0" + (_month+1);}
+	
+	if(_date<10){_date="0"+_date ; }
+	
+	return  _year + "-" + _month + "-" + _date + " " + _hour + ":" + _minute + ":" + _second ;
+
+}
+		var second = new Date().getTime();
+		
+		//var _startTime = formatDateTime(new Date(second-(10*24*60*60*1000)));
+		var now = formatDateTime(new Date());
+			//动态设置最终时间
+	var theDate = new Date();
+	var _hour = theDate.getHours();
+	var _minute = theDate.getMinutes();
+	var _second = theDate.getSeconds();
+	var _year = theDate.getFullYear();
+	var _month = theDate.getMonth();
+	var _date = theDate.getDate();
+	if(_hour < 10){_hour="0"+_hour  }
+	if(_minute < 10){_minute="0"+_minute  }
+	if(_second < 10){_second="0"+_second  }
+	if(_month < 9){_month = "0" + (_month+1);}
+	if(_date < 10){_date="0"+_date  }
+	var _startTimeY = "%22" + _year + "-01-01%2000:00:00%22";
+	var _startTimeM = "%22" + _year + "-" + _month + "-01%2000:00:00%22";
+	var _startTimeD = "%22" + _year + "-" + _month + "-" + _date + "%2000:00:00%22";
+	//var _endTime = _year + "-" + _month + "-" + _date + "%20" + _hour + ":" + _minute + ":" + _second ;
+	var _end = _year + "-" + _month + "-" + _date;
+	
+	
+	 
+  $(function () {
+  	//Date picker
+    $('#start').datetimepicker({
+      autoclose: true,
+      format: 'yyyy-mm-dd',
+      todayHighlight: true,
+      language: 'zh-CN',
+      minView: 2
+    });
+    $('#start').val(_end);
+    $('#end').datetimepicker({
+      autoclose: true,
+      format: 'yyyy-mm-dd',
+      todayHighlight: true,
+      language: 'zh-CN',
+      minView: 2
+    });
+    $('#end').val(_end);
+  	$("#fenxi").hide();
+  	
+  	var _startTime = $("#start").val();
+  	_startTime = _startTime + " 00:00:00";
+  	var _endTime = $("#end").val();
+  	_endTime = _endTime + " 23:59:59";
+  	var _devid = $("#devid").val();
+  	var _devname = $("#devid").find("option:selected").text();
+  	// 历史数据方法调用
+		devicehistorysdata(_devid, _startTime, _endTime,_devname);
+		
+		//数据按钮
+		$("#historydata_btn").click(function(){
+			
+			var _startTime = $("#start").val();
+	  	_startTime = _startTime + " 00:00:00";
+	  	var _endTime = $("#end").val();
+	  	_endTime = _endTime + " 23:59:59";
+	  	var _devid = $("#devid").val();
+	  	var _devname = $("#devid").find("option:selected").text();
+	  	if (_startTime == "" || _endTime == "") {
+        alert('开始日期或结束日期不能为空！');
+        return;
+	    }
+	    if (_endTime < _startTime) {
+	        alert('结束日期不能小于开始日期！');
+	        return;
+	    }
+	  	console.log(_devid, _startTime, _endTime,_devname);
+	  	
+	  	$("#fenxi").hide();
+	  	$("#example1_wrapper").show();
+			devicehistorysdata(_devid, _startTime, _endTime,_devname);
+		})
+		
+		//分析按钮
+		$("#historylist_btn").click(function(){
+			var _startTime = $("#start").val();
+	  	_startTime = _startTime + " 00:00:00";
+	  	var _endTime = $("#end").val();
+	  	_endTime = _endTime + " 23:59:59";
+	  	var _devid = $("#devid").val();
+	  	var _devname = $("#devid").find("option:selected").text();
+			if (_startTime == "" || _endTime == "") {
+        alert('开始日期或结束日期不能为空！');
+        return;
+	    }
+	    if (_endTime < _startTime) {
+	        alert('结束日期不能小于开始日期！');
+	        return;
+	    }
+	    
+	    $("#fenxi").show();
+	  	$("#example1_wrapper").hide();
+			devicehistoryslist(_devid, _startTime, _endTime);
+		})
+		//导出按钮
+		$("#out_btn").click(function () {
+			var _startTime = $("#start").val();
+	  	_startTime = _startTime + " 00:00:00";
+	  	var _endTime = $("#end").val();
+	  	_endTime = _endTime + " 23:59:59";
+	  	var _devid = $("#devid").val();
+	  	var _devname = $("#devid").find("option:selected").text();
+			if (_startTime == "" || _endTime == "") {
+        alert('开始日期或结束日期不能为空！');
+        return;
+	    }
+	    if (_endTime < _startTime) {
+	        alert('结束日期不能小于开始日期！');
+	        return;
+	    }
+			window.open('http://123.56.156.91:8082/WlcsInterface/getMonthBzRecordList?params={%22deviceId%22:'+ _devid +',%22beginTime%22:%22'+ _startTime +'%22,%22endTime%22:%22'+ _endTime +'%22,%22type%22:%224%22,%22begin%22:6,%22end%22:13}');
+		})
+  });
+  
+//历史曲线方法
+function devicehistoryslist(devid, startdate, enddate) {
+    var _url = 'http://123.56.156.91:8081/AppInterface/queryAllBzRecord?params={%22deviceId%22:'+ devid +',%22beginTime%22:%22' + startdate + '%22,%22endTime%22:%22' + enddate + '%22}';
+    //加载历史数据列表
+    $.ajax({
+        //要用post方式
+        type: "post",
+        //方法所在页面和方法名
+        url: _url,
+        //contentType: "application/json; charset=utf-8",
+        dataType: "jsonp",
+        jsonp: "jsonpCallback",
+        success: function (data) {
+        	//console.log(data);
+            if(data.data) {
+                var datas = data.data.reverse();
+
+                var xlist = new Array();
+
+                var ary0 = new Array();
+
+                var ary1 = new Array();
+
+                var ary2 = new Array();
+
+                var ary3 = new Array();
+                
+                var ary4 = new Array();
+                
+                var ary5 = new Array();
+                
+                var ary6 = new Array();
+
+                for (var i = 0 ; i < datas.length; i++) {
+                    var datasAry = datas[i].data.split(",");
+                    xlist[i] = datas[i].syncTime;
+                    ary0[i] = datasAry[6];
+                    ary1[i] = datasAry[8];
+                    ary2[i] = datasAry[11];
+                    ary3[i] = datasAry[12];
+                    ary4[i] = datasAry[9];
+                    ary5[i] = datasAry[10];
+                    ary6[i] = datasAry[7];
+                };
+//              console.log(ary0);
+                tem("tem",xlist,ary0,ary1);
+                ppm("ppm",xlist,ary2,ary3);
+                rh("rh",xlist,ary6);
+                pm("pm",xlist,ary4,ary5)
+            }else{
+                alert('此时间段没有数据');
+            }
+        },
+        error: function (err) {
+            alert('系统连接错误，请重试！');
+        }
+    });
+}  
+function tem(id,xlist,data,data1){
+	var myChart = echarts.init(document.getElementById(id),"shine");
+	option = {
+		grid: {
+        top: 30,
+        bottom: 80,
+        right: 25,
+        left: 35
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    dataZoom: [
+				{
+					show: true,
+					realtime: true,
+					start: 0,
+					end: 100,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z'
+				}
+		],
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data : xlist.map(function (str) {
+						return str.replace(' ', '\n')
+					}),
+    },
+    yAxis: {
+        type: 'value',
+        name: '温度（℃）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    },
+    series: [
+        {
+            name:'室内温度',
+            type:'line',
+            data: data,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(255, 70, 131)'
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        //rgb(255, 158, 68)
+                        color: '#fff184'
+                    }, {
+                        offset: 1,
+                        //rgb(255, 70, 131)
+                        color: '#fdcaab'
+                    }])
+                }
+            }
+        },
+        {
+            name:'室内温度设定点',
+            type:'line',
+            data: data1,
+            itemStyle: {
+                normal: {
+                    color: '#d01cbd'
+                }
+            }
+//          ,
+//          areaStyle: {
+//              normal: {
+//                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+//                      offset: 0,
+//                      color: 'rgb(255, 158, 68)'
+//                  }, {
+//                      offset: 1,
+//                      color: 'rgb(255, 70, 131)'
+//                  }])
+//              }
+//          }
+        }
+    ]
+	};
+	myChart.setOption(option);
+}
+function ppm(id,xlist,data,data1){
+	var myChart = echarts.init(document.getElementById(id),"shine");
+	option = {
+		grid: {
+        top: 30,
+        bottom: 80,
+        right: 40,
+        left: 50
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    dataZoom: [
+				{
+					show: true,
+					realtime: true,
+					start: 0,
+					end: 100,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z'
+				}
+		],
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data : xlist.map(function (str) {
+						return str.replace(' ', '\n')
+					}),
+    },
+    yAxis: [{
+        type: 'value',
+        name: 'CO2（PPM）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    },{
+        type: 'value',
+        name: '甲醛（PPM）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    }],
+    series: [
+        {
+            name:'室内CO2',
+            type:'line',
+            data: data,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(255, 70, 131)'
+                }
+            }
+        },
+        {
+            name:'室内甲醛',
+            type:'line',
+            data: data1,
+            yAxisIndex: 1,
+            itemStyle: {
+                normal: {
+                    color: '#d01cbd'
+                }
+            }
+        }
+    ]
+	};
+	myChart.setOption(option);
+}
+function rh(id,xlist,data){
+	var myChart = echarts.init(document.getElementById(id),"shine");
+	option = {
+		grid: {
+        top: 30,
+        bottom: 80,
+        right: 25,
+        left: 35
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    dataZoom: [
+				{
+					show: true,
+					realtime: true,
+					start: 0,
+					end: 100,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z'
+				}
+		],
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data : xlist.map(function (str) {
+						return str.replace(' ', '\n')
+					}),
+    },
+    yAxis: {
+        type: 'value',
+        name: '湿度（%）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    },
+    series: [
+        {
+            name:'室内湿度',
+            type:'line',
+            data: data,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(255, 70, 131)'
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgb(255, 158, 68)'
+                    }, {
+                        offset: 1,
+                        color: 'rgb(255, 70, 131)'
+                    }])
+                }
+            }
+        }
+    ]
+	};
+	myChart.setOption(option);
+}
+function pm(id,xlist,data,data1){
+	var myChart = echarts.init(document.getElementById(id),"shine");
+	option = {
+		grid: {
+        top: 30,
+        bottom: 80,
+        right: 25,
+        left: 50
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    dataZoom: [
+				{
+					show: true,
+					realtime: true,
+					start: 0,
+					end: 100,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z'
+				}
+		],
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data : xlist.map(function (str) {
+						return str.replace(' ', '\n')
+					}),
+    },
+    yAxis: {
+        type: 'value',
+        name: 'PM值（ug/m3）',
+        axisLabel: {
+            formatter: '{value}'
+        }
+    },
+    series: [
+        {
+            name:'室内PM2.5',
+            type:'line',
+            data: data,
+            itemStyle: {
+                normal: {
+                    color: 'rgb(255, 70, 131)'
+                }
+            }
+        },
+        {
+            name:'室内PM10',
+            type:'line',
+            data: data1,
+            itemStyle: {
+                normal: {
+                    color: '#d01cbd'
+                }
+            }
+        }
+    ]
+	};
+	myChart.setOption(option);
+}
+</script>
+</body>
+</html>
