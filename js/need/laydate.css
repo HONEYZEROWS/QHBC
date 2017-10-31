@@ -12,7 +12,7 @@ html{_background-image:url(about:blank); _background-attachment:fixed;}
 .laydate-icon-default,
 .laydate-icon-danlan,
 .laydate-icon-dahong,
-.laydate-icon-molv{height:22px; line-height:22px; padding-right:20px; border:1px solid #C6C6C6; background-repeat:no-repeat; background-position:right center;  background-color:#fff; outline:0;}
+.laydate-icon-molv{height:30px; line-height:30px; padding-right:20px; border:1px solid #C6C6C6; background-repeat:no-repeat; background-position:right center;  background-color:#fff; outline:0;}
 .laydate-icon-default{ background-image:url(../skins/default/icon.png)}
 .laydate-icon-danlan{border:1px solid #B1D2EC; background-image:url(../skins/danlan/icon.png)}
 .laydate-icon-dahong{background-image:url(../skins/dahong/icon.png)}
@@ -26,7 +26,7 @@ html{_background-image:url(about:blank); _background-attachment:fixed;}
 .laydate_body .laydate_box .laydate_yms, .laydate_body .laydate_box .laydate_time{display:none;}
 .laydate_body .laydate_box .laydate_show{display:block;}
 .laydate_body .laydate_box input{outline:0; font-size:14px; background-color:#fff;}
-.laydate_body .laydate_top{position:relative; height:26px; padding:5px; *width:100%; z-index:99;}
+.laydate_body .laydate_top{position:relative; height:30px; padding: 3px 5px; *width:100%; z-index:99;}
 .laydate_body .laydate_ym{position:relative; float:left; height:24px; cursor:pointer;}
 .laydate_body .laydate_ym input{float:left; height:24px; line-height:24px; text-align:center; border:none; cursor:pointer;}
 .laydate_body .laydate_ym .laydate_yms{position:absolute; left: -1px; top: 24px; height:181px;}
@@ -35,7 +35,7 @@ html{_background-image:url(about:blank); _background-attachment:fixed;}
 .laydate_body .laydate_y .laydate_yms{width:121px; text-align:center;}
 .laydate_body .laydate_y .laydate_yms a{position:relative; display:block; height:20px;}
 .laydate_body .laydate_y .laydate_yms ul{height:139px; padding:0; *overflow:hidden;}
-.laydate_body .laydate_y .laydate_yms ul li{float:left; width:60px; height:20px; line-height: 20px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.laydate_body .laydate_y .laydate_yms ul li{float:left; wisdth:60px; height:20px; line-height: 20px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
 .laydate_body .laydate_m{width:99px;}
 .laydate_body .laydate_m .laydate_yms{width:99px; padding:0;}
 .laydate_body .laydate_m input{width:42px; margin-right:15px;}
@@ -49,9 +49,9 @@ html{_background-image:url(about:blank); _background-attachment:fixed;}
 .laydate_body .laydate_ym label{right:28px;}
 .laydate_body .laydate_table{ width:230px; margin:0 5px; border-collapse:collapse; border-spacing:0px; }
 .laydate_body .laydate_table td{width:31px; height:19px; line-height:19px; text-align: center; cursor:pointer; font-size: 12px;}
-.laydate_body .laydate_table thead{height:22px; line-height:22px;}
+.laydate_body .laydate_table thead{height:30px; line-height:30px;}
 .laydate_body .laydate_table thead th{font-weight:400; font-size:12px; text-align:center;}
-.laydate_body .laydate_bottom{position:relative; height:22px; line-height:20px; padding:5px; font-size:12px;}
+.laydate_body .laydate_bottom{position:relative; height:30px; line-height:20px; padding:5px; font-size:12px;}
 .laydate_body .laydate_bottom #laydate_hms{position: relative; z-index: 1; float:left; }
 .laydate_body .laydate_time{ position:absolute; left:5px; bottom: 26px; width:129px; height:125px; *overflow:hidden;}
 .laydate_body .laydate_time .laydate_hmsno{ padding:5px 0 0 5px;}

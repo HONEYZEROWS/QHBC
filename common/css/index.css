@@ -1,0 +1,6 @@
+.amap-logo img{display: none;}
+.amap-copyright span{display: none;}
+.amap-info-sharp{display: none;}
+.amap-info-content{position: absolute;}
+.circle{font-size: 16px;background-color: rgba(0, 160, 233, 0.92);width: 50px;height: 50px;line-height: 50px;border-radius: 50%;margin: 0;text-align: center;box-sizing: content-box;border: none;padding: 2px;;text-align: center;color:#fff;}
+.circle:hover{background-color: rgb(253, 124, 83);}

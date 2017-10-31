@@ -54,6 +54,12 @@ $(function () {
 //				
 //			}
 //		},
+	  	tooltip : {
+			trigger: 'axis',
+	        axisPointer : {         
+	          type : 'shadow'     
+	        }
+	    },
 	    grid: {
 			x: 50,
 			y: 20,
@@ -124,9 +130,15 @@ $(function () {
 //			right: '4%',
 //			textStyle: {
 //				fontSize: 12,
-//				
+//					
 //			}
 //		},
+		tooltip : {
+			trigger: 'axis',
+	        axisPointer : {         
+	          type : 'shadow'     
+	        }
+	    },
 	    grid: {
 			x: 50,
 			y: 20,

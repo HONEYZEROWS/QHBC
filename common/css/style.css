@@ -1,16 +1,18 @@
-
+body{font-size: 14px}	
 .content{height: 100%;}
 .content_top{height: 100%; background-color: #fff;}
-.content_top_ul ul{text-align: center; border-bottom: 2px solid #a0a0a0; height: 50px; margin: 0 6px;}
-.content_top_ul ul li{list-style: none; padding:  0 1%;float: left;height: 40px; line-height: 40px;font-size: 16px; margin:10px 2px 0 2px;}
+.content_top_ul ul{text-align: center; border-bottom: 2px solid #a0a0a0; height: 40px; margin: 0 6px;}
+.content_top_ul ul li{list-style: none; padding:  0 1%;float: left;height: 30px; line-height: 30px;font-size: 16px; margin:10px 2px 0 2px;}
 .liStyle{border: 2px solid #a0a0a0; border-bottom: 2px solid rgba(255,255,255,1); border-top-left-radius: 5px; border-top-right-radius: 5px;}
 
 @media (max-width: 769px) {
-.content_top_ul ul{text-align: center; border-bottom: 2px solid #a0a0a0; height: 50px; margin: 0; padding: 0 4px;}
+body{font-size: 12px}
+.content_top_ul ul{text-align: center; border-bottom: 2px solid #a0a0a0; height: 30px; margin: 0; padding: 0 4px;}
 .content_top_ul ul li{text-align: center; height: 50px; margin: 0 6px; border: none; font-size: 12px; margin: 0 2px;}
 .liStyle{border: none;}
 .liStyle a{color: #9e9e9e;}
 }
+
 
 
 .scroll-menu::-webkit-scrollbar {/*滚动条整体样式*/
@@ -42,6 +44,17 @@
     border-radius: 0;
     background: rgba(0,0,0,0.1);
 }
+ul li{
+	list-style: none;
+}
+
+html,body{
+-webkit-user-select:none;
+   -moz-user-select:none;
+   -ms-user-select:none;
+   user-select:none;
+}
+
 a:hover{
 	color: #000;	
 }
@@ -52,7 +65,7 @@ a:hover{
 	padding: 15px 10px;
 }
 
-.font_14{font-size: 14px;}
+.font_14{font-size: 12px;}
 
 .bg-bl{background-color: #000080;}
 .bg-con{background-image: url(common/images/conbg.png);}
@@ -295,12 +308,6 @@ table.dataTable thead > tr > th {
 #a14{left:60%; top:61%;}
 #a15{left:37%; top:28%;}
 #a16{left:80%; top:5%;}
-
-
-
-
-
-
 
 @media (max-width: 992px){
 	.la{

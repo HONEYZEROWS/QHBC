@@ -1,13 +1,43 @@
 $(document).ready(function(){
-	
+
+	$(function(){
+	     //获取浏览器宽度
+	     var _width = $(window).width(); 
+	     if(_width < 1024){
+            //直接为该div添加w1024样式,会覆盖前一个样式
+            $(".content-wrapper").css('background-color', '#fff')
+       
+    	 }
+	});
+
+	$('.treeview-menu').on('click','li',function () {
+		var _postindex = $(this).index()
+		var _top = $('.treeview-menu').scrollTop()
+		location.href = "YXZYJSJY.html?" + "index" + _postindex + "top" + _top	
+
+	})
+
+	var _location =  window.location.search
+	var _getindex = _location.indexOf('x')
+	var _gettop = _location.indexOf("p")
+	var _getindex = _location.substring(_getindex+1,_gettop-2)
+	var _gettop = _location.substring(_gettop+1)
+
+	$('.treeview-menu li a').eq(_getindex).css({'background-color':'rgba(240, 241, 243, 0.63)','color': '#fd7c53', 'font-weight':'bold'})
+	$('.treeview-menu').scrollTop(_gettop)	
 	$('#INDEXHTML').click(function () { location.href='index.html'})
+
 	userid = $.cookie('userid');
 	truename = $.cookie('truename');
-	$('.info p').html(truename);
+	$('.header-name').html(truename);
 	wecome();
 	setInterval(wecome,1000);
 	
 	tt();
+
+	if (userid == ' ' || userid == undefined || truename == ' ' || truename == undefined) {
+		window.location = 'login.html'
+	}
 	
 	$("#login_btn").click(function () {
         //获取用户名
@@ -48,10 +78,7 @@ $(document).ready(function(){
                     alert('系统连接错误，请重试！');
                 }
             });
-
-
         }
-
     });
 	
 	$("body").keydown(function(event) {
@@ -62,6 +89,7 @@ $(document).ready(function(){
 	$(".header-btn").click(function(){
 		if(confirm("你确定退出系统吗？")){
 			window.location.href = "login.html";
+			clearAllCookie()
 		}else{
 			return;
 		}
@@ -130,3 +158,10 @@ function tt(){
     });
 }
 
+function clearAllCookie() {  
+    var keys = document.cookie.match(/[^ =;]+(?=\=)/g);  
+    if(keys) {  
+        for(var i = keys.length; i--;)  
+            document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()  
+    }  
+}  

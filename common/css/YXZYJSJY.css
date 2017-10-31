@@ -1,12 +1,13 @@
+li{list-style: none;}
 .content_bottom{margin: 20px; max-height: 85%; overflow-y: scroll; overflow-x: hidden;}
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left{margin-bottom: 20px;width: 98%;min-height: 260px;border: 2px solid #00a0e9; border-radius: 5px;}
-.JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left h5,.WDSD_content>h5:first-child,.WDSD_content .JCSJ_content_bottom_TOP_left h5,.JCSJ_content_bottom_TOP_bottom h5,.CSSD_content>h5,.XXSJSD_content h5, .XXSJSD_contents h5,.LSSJ_content h5{font-size: 16px;text-align: left;width: 96%;margin: 0 2%;height: 40px; line-height: 40px;border-bottom: 2px solid #00a0e9;}
+.JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left h5,.WDSD_content>h5:first-child,.WDSD_content .JCSJ_content_bottom_TOP_left h5,.JCSJ_content_bottom_TOP_bottom h5,.CSSD_content h5,.XXSJSD_content h5, .XXSJSD_contents h5,.LSSJ_content h5,.XXSJSD_contentstop h5{font-size: 16px;text-align: left;width: 96%;margin: 0 2%;height: 40px; line-height: 40px;border-bottom: 2px solid #00a0e9;}
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left>div>p:first-of-type{text-align: center;margin-top: 20px;height: 130px;line-height: 130px;font-size: 20px;}
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left>div>p:last-of-type{height: 40px; line-height: 40px; text-align: center;}
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left>div:first-of-type p:first-of-type{background: url(../images/wsbj1_03.png) no-repeat center; background-size: 130px;}
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left>div:nth-of-type(2) p:first-of-type{background: url(../images/wsbj2_03.png) no-repeat center; background-size: 130px;}
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left>div:last-of-type p:first-of-type{background: url(../images/wsbj3_03.png) no-repeat center; background-size: 130px;}
-.JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left>div p span{font-size: 14px}
+.JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_left>div p span{font-size: 14px;}
 #main,#main1{width: 100%; min-height: 200px;}
 
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_leftInput{text-align: right; margin-top: 10px; margin-right: 10px;}
@@ -27,11 +28,23 @@
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_right p{ color: #00a0e9; font-size: 28px; text-align: center; line-height: 70px;}
 .JCSJ_content_bottom_TOP .JCSJ_content_bottom_TOP_right p span{font-size: 14px}
 
-.WDSD_content,.CSSD_content{width: 98%; min-height: 700px; border: 2px solid #00a0e9; border-radius: 5px;}
-.WDSD_content .WDSD_contentTop{width: 100%; height: 50px;}
-.WDSD_content .WDSD_contentTop span{display: inline-block; margin-right: 10px;height: 50px; line-height: 50px; float: right;}
-.WDSD_content .WDSD_contentTop img{width: 10px; margin-right: 5px;}
-.WDSD_content .WDSD_contentBottom{width: 94%; margin: 0 3%;}
+.WDSD_content,.CSSD_content{width: 98%; min-height: 640px; border: 2px solid #00a0e9; border-radius: 5px;}
+.WDSD_content .WDSD_contentTop{position: relative;text-align: center;width: 96%;margin: 10px 2%; min-height: 340px;border: 2px solid #00a0e9; border-radius: 5px;}
+/*.WDSD_content .WDSD_contentTop div div{margin: 10px 0;}*/
+.WDSD_content .WDSD_contentTop div div{padding-bottom: 20px;border-bottom: 1px solid #f6f6f7}
+.WDSD_content .WDSD_contentTop div div:nth-child(odd){border-right: 1px solid #f6f6f7}
+.WDSD_content .WDSD_contentTop div:last-of-type div{border-bottom:none;}
+.WDSD_content .WDSD_contentTop div table{width: 100%; text-align: center;}
+.WDSD_content .WDSD_contentTop div table th{text-align: center;}
+.WDSD_content .WDSD_contentTop div table td span {margin: 0 6px;}
+.WDSD_content .WDSD_contentTop div table input{width: 25%; text-align: center;}
+.WDSD_content .WDSD_contentTop h5{margin: 20px 0; height: 24px; line-height: 24px;}
+.WDSD_content .WDSD_contentTop h5 span{border-radius: 1px;font-size: 18px;padding-bottom: 4px; border-bottom: 2px solid #00a0e9;}
+/*.WDSD_content .WDSD_contentTop span{display: inline-block; margin-right: 10px;height: 50px; line-height: 50px; float: right;}
+.WDSD_content .WDSD_contentTop img{width: 10px; margin-right: 5px;}*/
+.WDSD_content .WDSD_contentTop input[type=button]{outline: none;position: absolute; bottom: 6%; right: 5%; width: 80px;border: 1px solid #0a94e3; border-radius: 6px;}
+.WDSD_content .WDSD_contentTop input[type=button]:hover{background-color: #00a0e9; color: #fff;}
+.WDSD_content .WDSD_contentBottom{width: 96%; margin: 0 2%;}
 .WDSD_content .WDSD_contentBottom div span{width: 2%; cursor: pointer;}
 .WDSD_content .WDSD_contentBottom span img{width: 16px;}
 .WDSD_content .WDSD_contentBottom div:nth-child(2) img{width: 100%; height: 28px;}
@@ -40,42 +53,49 @@
 .WDSD_content .WDSD_contentBottom div span:nth-child(5){margin-right: 14%;}
 .WDSD_content .WDSD_contentBottom span:last-child{margin: 0;float: right;}
 .WDSD_content .WDSD_contentBottom span i{display: none;}
-.WDSD_content .WDSD_contentTepsd{min-height: 100px;width: 94%; margin: 20px 3%; border: 2px solid #00a0e9; border-radius: 5px;position: relative;}
+
+.WDSD_content .WDSD_contentTepsd{min-height: 100px;width: 98%; margin: 20px 1%; border: 2px solid #00a0e9; border-radius: 5px;position: relative;}
 .WDSD_content .WDSD_contentTepsd h5{width: 40px; height: 20px; line-height: 20px; display: inline-block; background-color: #fff;position: absolute; top: -20px; left: 20px;text-align: center; font-size: 16px}
 .WDSD_content .WDSD_contentTepsd div{margin: 20px 0;}
 .WDSD_content .WDSD_contentTepsd h5{width: 40px; height: 20px; line-height: 20px; display: inline-block; background-color: #fff;position: absolute; top: -20px; left: 20px;text-align: center; font-size: 16px}
-.WDSD_content .WDSD_contentTepsd div p{display: inline-block;}
+.WDSD_content .WDSD_contentTepsd div p{display: inline-block; text-align: right; width: 30%; }
 .WDSD_content .WDSD_contentTepsd div:first-of-type{color: #7d7d7d;}
-.WDSD_content .WDSD_contentTepsd div span{margin: 0 5px 0 80px;}
+.WDSD_content .WDSD_contentTepsd div span{margin: 0 5px 0 40px;}
 .WDSD_content .WDSD_contentTepsd div p input{width: 25%; margin-right: 10px; text-align: center;}
-.WDSD_content .WDSD_contentTepsd div>input{position: absolute; top: 56%; right: 20%; width: 50px; color: #00a0e9; }
-.WDSD_content .JCSJ_content_bottom_TOP_left{min-height: 250px;margin:10px 6%;border: 2px solid #00a0e9; border-radius: 5px;}
+.WDSD_content .WDSD_contentTepsd div>input{outline: none;position: absolute; bottom: 6%; right: 5%; width: 80px;border: 1px solid #0a94e3; border-radius: 6px; }
+.WDSD_content .WDSD_contentTepsd div>input:hover{background-color: #00a0e9; color: #fff;}
+
+.WDSD_content .JCSJ_content_bottom_TOP_left{min-height: 250px;margin:10px 2%;}
+.WDSD_content .JCSJ_content_bottom_TOP_left>div{width: 49%; float: left;border: 2px solid #00a0e9; border-radius: 5px;}
+.WDSD_content .JCSJ_content_bottom_TOP_left>div:first-of-type{margin-right: 2%;}
 .WDSD_content .JCSJ_content_bottom_TOP_left span{height: 20px;line-height: 40px;cursor: pointer;font-size: 12px;display: inline-block;text-align: right;width: 98%; color: #00a0e9;}
 .WDSD_content .JCSJ_content_bottom_TOP_left table{width: 100%;}
-.WDSD_content .JCSJ_content_bottom_TOP_left table tr{text-align: center; min-height: 80px;line-height: 80px;}
-.WDSD_content .JCSJ_content_bottom_TOP_left table tr td{font-size: 12px}
+.WDSD_content .JCSJ_content_bottom_TOP_left table tr{text-align: center; min-height: 100px;line-height: 100px;}
+.WDSD_content .JCSJ_content_bottom_TOP_left table tr td{font-size: 14px}
 
-.WDSD_content .JCSJ_content_bottom_TOP_bottom{position: relative;}
+.WDSD_content .JCSJ_content_bottom_TOP_bottom{position: relative; text-align: center;border: 2px solid #00a0e9; border-radius: 5px;width: 96%; margin: 20px 2%; margin-bottom: 40px;}
 .WDSD_content .JCSJ_content_bottom_TOP_bottom h5 span{display: inline-block; float: right;color: #00a0e9; width: 30px; line-height: 30px; height: 30px; border: 2px solid #00a0e9; border-radius: 50%; text-align: center; cursor: pointer; font-weight: bold; margin-top: 5px;}
-.WDSD_content .JCSJ_content_bottom_TOP_bottom{min-height: 200px; border: 2px solid #00a0e9; border-radius: 5px;width: 94%; margin: 20px 3%; margin-bottom: 40px;}
-.WDSD_content .JCSJ_content_bottom_TOP_bottom p{border-right: 1px solid #00a0e9;display: inline-block; width: 32%; text-align: center; margin: 40px 0;}
+.WDSD_content .JCSJ_content_bottom_TOP_bottom p{border-right: 1px solid #00a0e9;display: inline-block; width: 24%; text-align: center; margin: 40px 0;}
 .WDSD_content .JCSJ_content_bottom_TOP_bottom p:last-of-type{border: none;}
 .WDSD_content .JCSJ_content_bottom_TOP_bottom p span{display: block; height: 40px; line-height: 40px;}
-.WDSD_content .JCSJ_content_bottom_TOP_bottom p input{width: 14%;margin: 0 10px; text-align: center; font-size: 16px}
-.WDSD_content .JCSJ_content_bottom_TOP_bottom>input{width: 50px; color: #00a0e9; position: absolute; right: 2%; bottom: 4px;}
+.WDSD_content .JCSJ_content_bottom_TOP_bottom p input{width: 25%;margin: 0 10px; text-align: center; font-size: 16px}
+.WDSD_content .JCSJ_content_bottom_TOP_bottom>input{outline: none;width: 80px;border: 1px solid #0a94e3; border-radius: 6px;  position: absolute; right: 2%; bottom: 6%;}
+.WDSD_content .JCSJ_content_bottom_TOP_bottom>input:hover{background-color: #00a0e9; color: #fff;}
 
-.CSSD_content>div{width: 94%; margin: 0 3%; min-height: 100px;}
-.CSSD_content div p{display: inline-block;width: 50%; float: left; color: #7D7D7D;}
-.CSSD_content div p i{color: #7D7D7D; margin-right: 4px; font-size: 16px}
-.CSSD_content div p:first-of-type{width: 100%;height: 30px; line-height: 30px; font-size: 14px; color: #000; margin-top: 10px;}
-.CSSD_content div p span{width: 100px;  display: inline-block; height: 30px; line-height: 30px;}
-.CSSD_content div p input{width: 20%; margin: 0 20px; text-align: center;}
-.CSSD_content .CSSD_content_last{width: 50%;  float: left; margin: 0; color: #7D7D7D; text-align: center;}
-.CSSD_content .CSSD_content_last p:first-of-type{text-align: left; color: #7D7D7D}
+.CSSD_content .CSSD_contentTOP{width: 96%; margin: 0 2%; min-height: 100px;}
+.CSSD_content .CSSD_contentBOTTOM{width: 96%; margin: 0 2%;min-height: 60px; margin-top: 10px;}
+.CSSD_content .CSSD_contentTOP p,.CSSD_contentBOTTOM p{display: inline-block;width: 50%; float: left; color: #7D7D7D;}
+.CSSD_content .CSSD_contentTOP p i{color: #7D7D7D; margin-right: 4px; font-size: 16px}
+.CSSD_content .CSSD_contentTOP p:first-of-type{width: 100%;height: 30px; line-height: 30px; font-size: 14px; color: #000; margin-top: 10px;}
+.CSSD_content .CSSD_contentTOP p span, .CSSD_contentBOTTOM p span{width: 100px;  display: inline-block; height: 30px; line-height: 30px;}
+.CSSD_content .CSSD_contentTOP p input, .CSSD_contentBOTTOM p input{width: 20%; margin: 0 20px; text-align: center;}
+.CSSD_content .CSSD_content_last{width: 96%; margin: 0 2%;color: #7D7D7D; text-align: center;}
+.CSSD_content .CSSD_content_last>div{width: 50%; float: left;}
+.CSSD_content .CSSD_content_last p:first-of-type{text-align: left; color: #7D7D7D; height: 40px; line-height: 40px;}
 .CSSD_content .CSSD_content_last table{width: 60%; border: 1px solid #7D7D7D;}
 .CSSD_content .CSSD_content_last table img{width: 40px;}
 
-.XXSJSD_content, .XXSJSD_contents{position: relative;width: 98%; min-height: 460px ;border: 2px solid #00a0e9; border-radius: 5px; margin-bottom: 20px;}
+.XXSJSD_content, .XXSJSD_contents,.XXSJSD_contentstop{margin-top: 20px;position: relative;width: 98%; min-height: 460px ;border: 2px solid #00a0e9; border-radius: 5px; margin-bottom: 20px;}
 .XXSJSD_content{text-align: center;}
 .XXSJSD_content select{width: 32.2%; margin: 20px 0 10px 0;}
 
@@ -83,22 +103,82 @@
 .XXSJSD_content table{width: 100%;text-align: center;}
 .XXSJSD_content table tr th{text-align: center;}
 .XXSJSD_content table tr td{font-size: 12px; color: #7D7D7D;}
-.XXSJSD_contents {min-height: 200px;}
-.XXSJSD_contents div p{margin: 10px 2%;}
-.XXSJSD_contents div select{width: 15%; margin-left: 10px;}
-.XXSJSD_contents div div{height: 40px;}
+
+.XXSJSD_contents {min-height: 130px;}
+.XXSJSD_contents div p{margin: 20px 2%;}
+.XXSJSD_contents div select, .XXSJSD_contentstop div select{width: 15%; margin-left: 10px;}
+.XXSJSD_contents div div, .XXSJSD_contentstop div div{height: 40px;}
 .XXSJSD_contents input[type=button]{width: 80px;position: absolute; right: 5%; bottom: 12%;border: 1px solid #0a94e3; border-radius: 6px; outline: none;}
+.XXSJSD_contents input[type=button]:hover, .XXSJSD_contentstop input[type=button]:hover{background-color: #00a0e9; color: #fff;}
+.XXSJSD_contentstop{min-height: 300px;text-align: center;}
+.XXSJSD_contentstop>div {position: relative;border: 2px solid #0099de; min-height: 100px; border-radius: 5px; width: 96%; margin:20px 2%;}
+.XXSJSD_contentstop div p{height: 30px; line-height: 30px;}
+.XXSJSD_contentstop div i{padding-bottom: 6px; border-bottom: 2px solid #0099de}
+.XXSJSD_contentstop input[type=button]{width: 80px;position: absolute; right: 2%; bottom: 6%;border: 1px solid #0a94e3; border-radius: 6px; outline: none;}
+
 
 .LSSJ_content{width: 98%;min-height: 400px;border: 2px solid #00a0e9; border-radius: 5px; margin-bottom: 20px;}
+.LSSJ_content .demo1 input, .demo2 input{border-radius: 5px; text-indent: 6px;}
+.LSSJ_content .demo1{margin-left: 1%;}
+.LSSJ_content input[type=button]{width: 80px;height: 30px;line-height: 30px;border: 1px solid #0a94e3; border-radius: 6px; outline: none;}
+.LSSJ_content input[type=button]:hover{background-color: #00a0e9; color: #fff;}
+.LSSJ_content #main{width: 100%; height: 300px;}
+
+.LSSJ_content table{width: 96%; text-align: center; margin: 20px 2%;}
+.LSSJ_content table th{text-align: center;border: 1px solid #dbe4e8; height: 40px; line-height: 40px;}
+.LSSJ_content table td{border: 1px solid #dbe4e8; font-size: 14px}
+.LSSJ_content table tr{height: 30px; line-height: 30px;}
+.LSSJ_content table tr:nth-child(odd) {background-color: rgb(238, 238, 239);}
+.LSSJ_content #page_navigation{text-align: center; background-color: #eeeeef; width: 98%; margin: 0 1%; height: 30px;}
+.LSSJ_content .num_box{width: 40px;text-align: center;border-radius: 5px; margin: 0 10px;}
+/*.LSSJ_content .demo3 input:last-child{margin-left: 40px;}*/
+#schedule-box{margin: 3% 2%;padding: 10px 20px;border: 2px solid #00a0e9; border-radius: 5px;}
+.schedule-hd{text-align: center;display: flex;justify-content: space-evenly;padding: 0 20px;  color: #00a0e9; height: 30px; line-height: 30px; margin: 20px 0;}
+.today{text-align: center; font-size: 20px; color: #000;}
+.week-ul{ background-color: ghostwhite;}
+.ul-box{overflow: hidden;}
+.ul-box > li{float: left;width: 14.28%;text-align: center;padding: 5px 0;}
+.other-month{color: #999999;}
+.current-month{color: #333333;}
+#nextMonth, #prevMonth{margin: 0 20px;}
+#nextMonth, #prevMonth, #prevYear, #nextYear{cursor: pointer; font-size: 20px}
+#nextMonth:hover, #prevMonth:hover, #prevYear:hover, #nextYear:hover{color: #000000;}
+.today-style{border-radius: 50%;background: #58d321;}
+.arrow{cursor: pointer;}
+.dayStyle{display: inline-block;width: 35px;height: 35px;border-radius: 50%;text-align: center;line-height: 35px;cursor: pointer;}
+.today-flag{background: #fd7c53;color: #fff;}
+.selected-style {background: #00BDFF;color: #ffffff;}
+.ul-box{padding: 0;}
+.current-month > .dayStyle:hover{background: gainsboro;}
+.current-month > .dayStyle:active{font-size: 20px}
+#h3Ele{text-align: center;padding: 10px;}
+
 
 @media (max-width: 1220px) {
-.WDSD_content .WDSD_contentTepsd div p{display: inline-block; width: 44%; float: left;}
-.WDSD_content .WDSD_contentTepsd div span{margin: 0 0 0 4px;}
+.content_bottom{margin:0px; width: 100%;max-height: 85%; overflow-y: scroll; overflow-x: hidden;}
+.WDSD_content,.CSSD_content{width: 98%; min-height: 700px; border: 2px solid #00a0e9; border-radius: 5px;}
+.WDSD_content .JCSJ_content_bottom_TOP_left>div{width: 100%; float: none;border: 2px solid #00a0e9; border-radius: 5px;}
+.WDSD_content .JCSJ_content_bottom_TOP_left>div:first-of-type{margin-bottom: 2%;}
+
+.WDSD_content .WDSD_contentTepsd div p{display: inline-block; width: 70%;}
+.WDSD_content .WDSD_contentTepsd div span{margin: 0 0 0 10px;}
 .WDSD_content .WDSD_contentTepsd div p input{width: 25%; margin-right: 5px; text-align: center;}
-.WDSD_content .WDSD_contentTepsd div>input{position: absolute; top: 56%; right: 2%; width: 50px; color: #00a0e9;}
-.CSSD_content{min-height: 900px;}
-.CSSD_content div{width: 94%; margin: 0 3%; min-height: 120px;}
-.CSSD_content .CSSD_content_last{width: 100%;  margin: 0; color: #7D7D7D; text-align: center;}
-.CSSD_content .CSSD_content_last table{margin-left: 20%;}
+.WDSD_content .WDSD_contentTepsd div>input{position: absolute; bottom: 5%; right: 2%; width: 50px; height: 30px;color: #00a0e9;}
+.WDSD_content .JCSJ_content_bottom_TOP_bottom p input{width: 70%; margin: 4px 2px;}
+.WDSD_content .WDSD_contentTop div table input{width: 40%; text-align: center;}
+.CSSD_content .CSSD_contentTOP{width: 94%; margin: 0 3%; min-height: 140px;}
+.CSSD_content .CSSD_content_last p:first-of-type{text-align:center; color: #7D7D7D; height: 40px; line-height: 40px;}
+.CSSD_content .CSSD_content_last table{width: 96%; border: 1px solid #7D7D7D;}
+.WDSD_content .JCSJ_content_bottom_TOP_left table tr td{font-size: 12px}
+.LSSJ_content .demo1, .demo2, .demo3{margin: 10px 0;}
+.LSSJ_content .demo3{margin-left: 40%;}
+.XXSJSD_contents{min-height: 200px;}
+.XXSJSD_contentstop{min-height: 400px;text-align: center;}
+.XXSJSD_contentstop>div{min-height: 160px;}
+.XXSJSD_contentstop>div select{width: 25%}
+.XXSJSD_contents div select, .XXSJSD_contentstop div select{width: 25%; margin-left: 0;}
+.XXSJSD_contents div select{margin-left: 10px;}
+#schedule-box{margin: 3% 2%;padding: 35px 6px;border: 2px solid #00a0e9; border-radius: 5px; font-size: 12px}
+.today{text-align: center; font-size: 14px; color: #000;}
 }
 
