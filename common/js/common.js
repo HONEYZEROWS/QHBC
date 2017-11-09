@@ -1,27 +1,113 @@
 $(document).ready(function(){
+	$('input[type="button"]').click(function () {
+		$(this).css('transform','scale(1.1)')
+	}).mouseleave(function () {$(this).css('transform', 'scale(1)')})
+	$('input[type=text]').keypress(function(e) {             
+		if (!String.fromCharCode(e.keyCode).match(/[0-9\.]/)) {
+	    	return false;              }        
+	    });   
+	$('input[type="text"]').keypress(function (e) {
+		if(!String.fromCharCode(e.keyCode).match(/[0-9]/) || $(this).val().length > 2){
+			alert("请正确输入数字")
+			$(this).val('')
+			return false
+		}
+	})
+	var _datauserId = $.cookie('datauserId')
+	var _datadeviceId = $.cookie('datadeviceId')
+	setInterval(function () {
+		var t_SWWD = '15'
+		if (t_SWWD<0) {
+			t_SWWD = "F6,-" + PrefixInteger(t_SWWD.slice(1,t_SWWD.length),4)
+		} else {
+			t_SWWD = "F6," + PrefixInteger(t_SWWD,4)
+		}
+//		getDataDown(t_SWWD)
+	},30000)
+	
+	function getDataDown (a) {
+		$.ajax({
+			//要用post方式
+			type: "post",
+			//方法所在页面和方法名
+			url: 'http://123.57.162.77:8081/AppInterface/sendInstruction?params={%22userId%22:'+_datauserId+',%22deviceId%22:'+_datadeviceId+',%22instruction%22:%22'+a+'%22}',
+			dataType: "jsonp",
+			jsonp: "jsonpCallback",
+			success: function(data) {
+				console.log(data)
+				console.log(a)
+			}
+		})	
+	}	
 
-	$(function(){
-	     //获取浏览器宽度
-	     var _width = $(window).width(); 
-	     if(_width < 1024){
-            //直接为该div添加w1024样式,会覆盖前一个样式
-            $(".content-wrapper").css('background-color', '#fff')
-       
-    	 }
+	function PrefixInteger(num, length) {  
+	 return ( "0000" + num ).substr( -length );  
+	}
+	
+	setInterval(loadData,5000)
+	function loadData () {
+		$.ajax({
+			//要用post方式
+			type: "post",
+			//方法所在页面和方法名
+			url: 'http://123.56.156.91:8089/getBzRecord?params={%22deviceId%22:'+_datadeviceId+'}',
+			dataType: "jsonp",
+			jsonp: "jsonpCallback",
+			success: function(data) {
+//				console.log(data)
+				var data = data.data.data
+				var arr = data.split(',')	
+				//网关下载室外温度		
+//				arr[12]
+				var status = arr[9] 
+				if (status == 0) {
+					$('#status').html('<img src="common/images/ringred.png"/> 现场停止')
+					$('#status').css('color', '#d81e06')
+				} else if(status == 1) {
+					$('#status').html('<img src="common/images/ringblue.png"/> 正常供暖')
+					$('#status').css('color', '#1296db')
+				} else if(status == 2) {
+					$('#status').html('<img src="common/images/ringyellow.png"/> 应急供暖')
+					$('#status').css('color', '#f4ea2a')
+				}
+			}
+		})	
+	}
+	loadData()
+
+	//获取浏览器宽度
+     var _width = $(window).width(); 
+     if(_width < 1024){
+        //直接为该div添加w1024样式,会覆盖前一个样式
+        $(".content-wrapper").css('background-color', '#fff')
+   
+	 }
+    $(window).resize(function() {
+	  	controlHeight()
 	});
+     
+     
+    function controlHeight () {
+     	var _height = $(document).height();
+    	$('.scroll-menu').height(_height - parseFloat($('.main-header').height()) - parseFloat($('#INDEXHTML').height()) -parseFloat($('.main-footer').height())-4)
+    } 
+    controlHeight()
 
 	$('.treeview-menu').on('click','li',function () {
+		var _datauserId = $(this).attr('data-userId')
+		var _datadeviceId = $(this).attr('data-deviceId')		
 		var _postindex = $(this).index()
 		var _top = $('.treeview-menu').scrollTop()
-		location.href = "YXZYJSJY.html?" + "index" + _postindex + "top" + _top	
-
+		location.href = "YXZYJSJY.html?" + "deviceId:" + _datadeviceId
+		
+		$.cookie('datauserId', _datauserId)
+		$.cookie('datadeviceId', _datadeviceId)
+		$.cookie('postindex', _postindex)
+		$.cookie('top', _top)
 	})
-
-	var _location =  window.location.search
-	var _getindex = _location.indexOf('x')
-	var _gettop = _location.indexOf("p")
-	var _getindex = _location.substring(_getindex+1,_gettop-2)
-	var _gettop = _location.substring(_gettop+1)
+	
+	var _getindex = $.cookie('postindex')
+	var _gettop = $.cookie('top')
 
 	$('.treeview-menu li a').eq(_getindex).css({'background-color':'rgba(240, 241, 243, 0.63)','color': '#fd7c53', 'font-weight':'bold'})
 	$('.treeview-menu').scrollTop(_gettop)	

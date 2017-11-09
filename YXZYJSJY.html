@@ -42,13 +42,18 @@
         <ul class="nav navbar-nav">
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#">欢迎您 <span class="header-name"> </span></a>
+            <a href="#"><span id="status"></span></a>
           </li>
+         
           <li>
             <a href="#"><span class="header-time"></span></a>
           </li>
           <li>
             <a href="#"><span class="header-tem">0</span>℃</a>
+          </li>
+          
+           <li>
+            <a href="#">欢迎您 <span class="header-name"></span></a>
           </li>
           <li>
             <a href="#"><span class="header-btn">退出</span></a>
@@ -71,14 +76,14 @@
             </span>
           </a>
           <ul class="treeview-menu  scroll-menu" style="height: 500px; overflow-y: scroll; ">
-            <li>
+            <li data-userId="100280" data-deviceId = "2051">
             	<a href="#" class=""><i class="fa fa-map-marker"></i>易县职业技术教育中心
             		<span class="pull-right-container">
               		<i class="fa fa-angle-left pull-right"></i>
            			</span>
             	</a>
             </li>
-            <li>
+            <li data-userId="100281" data-deviceId = "2052">
             	<a href="#" class=""><i class="fa fa-map-marker"></i>易县第二高级中学
             		<span class="pull-right-container">
               		<i class="fa fa-angle-left pull-right"></i>
@@ -446,11 +451,11 @@
   		<div class="content_top">
   			<div class="content_top_ul">
 		  		<ul>
-		  			<li class="liStyle"><a href="YXZYJSJY.html">基础数据</a></li>
-		  			<li><a href="WDSJ.html">分时分温设置</a></li>
-		  			<li><a href="CSSZ.html">参数设置</a></li>
+		  			<li class="liStyle"><a href="" id="YXZYJSJY">基础数据</a></li>
+		  			<li><a href="WDSJ.html" id="WDSJ">分时分温设置</a></li>
+		  			<li><a href="CSSZ.html" id="CSSZ">参数设置</a></li>
 		  			<!--<li><a href="XXSJSD.html">休息时间设置</a></li>-->
-		  			<li><a href="LSSJ.html">历史数据</a></li>
+		  			<li><a href="LSSJ.html" id="LSSJ">历史数据</a></li>
 		  		</ul>
 	  		</div>
 	  		
@@ -462,16 +467,16 @@
 			  					<div class="JCSJ_content_bottom_TOP_left">
 			  						<h5>二次供水回水实时数据</h5>
 				  					<div class="col-lg-4 col-md-4 col-sm-4">
-				  						<p>48<span>℃</span></p>
+				  						<p id="ECGSWD"></p>
 				  						<p>二次供水温度</p>
 				  					</div>
 				  					<div class="col-lg-4 col-md-4 col-sm-4">
-				  						<p>37<span>℃</span></p>
+				  						<p id="ECHSWD"></p>
 				  						<p>二次回水温度</p>
 				  					</div>
 				  					<div class="col-lg-4 col-md-4 col-sm-4">
-				  						<p>47<span>℃</span></p>
-				  						<p>设定温度</p>
+				  						<p id="WDSD"></p>
+				  						<p>二次侧供水温度设定</p>
 				  					</div>
 			  					</div>
 			  				</div>
@@ -479,15 +484,15 @@
 			  					<div class="JCSJ_content_bottom_TOP_left">
 			  						<h5>温度实时数据</h5>
 				  					<div class="col-lg-4 col-md-4 col-sm-4">
-				  						<p>8<span>℃</span></p>
+				  						<p id="SWWD"></p>
 				  						<p>室外温度</p>
 				  					</div>
 				  					<div class="col-lg-4 col-md-4 col-sm-4">
-				  						<p>37<span>℃</span></p>
+				  						<p id="YCCWD"></p>
 				  						<p>一次侧温度</p>
 				  					</div>
 				  					<div class="col-lg-4 col-md-4 col-sm-4">
-				  						<p>47<span>℃</span></p>
+				  						<p id="SXWD"></p>
 				  						<p>水箱温度</p>
 				  					</div>
 			  					</div>
@@ -502,37 +507,61 @@
 			  						<h5>平面图</h5>
 				  					<div>
 				  							<div class="JCSJ_content_bottom_TOP_leftInput">
-				  								<input type="button" name="" id="" value="自动" />
-				  								<input type="button" name="" id="" value="手动" />
+				  								<input type="button" name="" id="PID_tjzd" value="自动"/>
+				  								<input type="button" name="" id="PID_tjSD" value="手动" />
 				  							</div>
 				  							<div class="JCSJ_content_bottom_TOP_leftImages">
 				  								<div>
-				  									<input type="checkbox" id="" value="" /><span>阀门开度: </span><input type="text" id="" placeholder="49%" disabled="disabled"/>
+				  									<input type="checkbox" id="PID_fmkdcheckbox" value="" /><span>阀门开度: </span><input type="text" id="PID_fmkd" placeholder="" value="100" disabled="disabled"/>%
 				  								</div>
 				  								<div>
-				  									<input type="checkbox" id="" value="" /><span>供水温度: </span><input type="text" id="" placeholder="49℃" disabled="disabled"/>
+				  									<input type="checkbox" id="PID_gswdcheckbox" value="" /><span>二次侧供水温度设定: </span><input type="text" id="PID_gswd" placeholder="" value="50" disabled="disabled"/>℃
 				  								</div>
+				  								<!--<div>-->
+				  									<!--<span>TEC温度设定值: <i>0℃</i></span>-->
+				  								<!--</div>-->
 				  								<div>
-				  									<span>TEC温度设定值: <i>0℃</i></span>
+				  									<input type="button" name="" id="PID_finish" value="确定" />
 				  								</div>
+				  								
 				  							</div>
 				  					</div>
 			  					</div>
 			  				</div>
 		  					<div class="col-lg-4 col-md-12 col-xs-12">
 			  					<div class="JCSJ_content_bottom_TOP_right">
-			  							<h5>室外湿度</h5>
-			  							<p>20<span>℃</span></p>
+			  							<div class="col-lg-6">
+			  								<h5>室外湿度</h5>
+			  								<p id="SWSD"><span></span></p>
+			  							</div>
+			  							<div class="col-lg-6">
+			  								<h5>阀门开度</h5>
+			  								<p id="FMKD"><span></span></p>
+			  							</div>
 			  					</div>
 			  					<div class="JCSJ_content_bottom_TOP_right">
-			  							<h5>阀门实时开度</h5>
-			  							<p>55 <span>%</span></p>
+			  							<div class="CSSD_content_last">
+												<div class="col-lg-6">
+													<h5>一次侧水泵</h5>
+													<table border="1" cellspacing="" cellpadding="">
+														<tr><td>1#泵状态</td><td id="bengstatus1"></td></tr>
+														<tr><td>2#泵状态</td><td id="bengstatus2"></td></tr>
+													</table>
+												</div>
+							  				<div class="col-lg-6">
+													<h5>二次侧水泵</h5>
+													<table border="1" cellspacing="" cellpadding="">
+														<tr><td>1#泵状态</td><td id="bengstatus3"></td></tr>
+														<tr><td>2#泵状态</td><td id="bengstatus4"></td></tr>
+													</table>
+												</div>
+											</div>
 			  					</div>
 		  					</div>
   						</div>
   					</div>
   					
-  					<div class="">
+  					<div class="" style="margin-top: 10px;">
   						<div class="row">
   							
 			  				<div class="col-lg-6 col-md-12 col-xs-12">
@@ -577,5 +606,7 @@
 <script src="dist/js/demo.js"></script>
 <script type="text/javascript" src="common/js/YXZYJSJY.js" ></script>
 <script src="common/js/common.js"></script>
+<script type="text/javascript" src="common/js/circle-progress.js" ></script>
+<script type="text/javascript" src="common/js/examples.js" ></script>
 </body>
 </html>

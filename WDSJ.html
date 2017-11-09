@@ -42,14 +42,17 @@
 						<ul class="nav navbar-nav">
 							<!-- Control Sidebar Toggle Button -->
 							<li>
-					            <a href="#">欢迎您 <span class="header-name"> </span></a>
-					          </li>
+				            <a href="#"><span id="status"></span></a>
+				          </li>
+							
 							<li>
 								<a href="#"><span class="header-time"></span></a>
 							</li>
 							<li>
 								<a href="#"><span class="header-tem">0</span>℃</a>
-							</li>
+							</li><li>
+					            <a href="#">欢迎您 <span class="header-name"> </span></a>
+					          </li>
 							<li>
 								<a href="#"><span class="header-btn">退出</span></a>
 							</li>
@@ -63,15 +66,15 @@
 					 <ul class="sidebar-menu">
         <!--<li class="header">MAIN NAVIGATION</li>-->
         <li class="active treeview"  >
-          <a href="index.html" style="font-size: 14px; height: 60px; line-height: 40px;" id="INDEXHTML">
+          <a href="index.html" style="font-size: 14px; heig ht: 60px; line-height: 40px;" id="INDEXHTML">
             <i class="fa fa-bank"></i>
             <span>学校</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu  scroll-menu" style="height: 500px; overflow-y: scroll; ">
-            <li>
+          <ul class="treeview-menu  scroll-menu" style="overflow-y: scroll; height: 500px;">
+            <li data-userId="100280" data-deviceId = "2051">
             	<a href="#" class=""><i class="fa fa-map-marker"></i>易县职业技术教育中心
             		<span class="pull-right-container">
               		<i class="fa fa-angle-left pull-right"></i>
@@ -467,99 +470,73 @@
 									<h5>温度设定</h5>
 									<div  class="WDSD_contentTop">
 										<div>
-											<div class="col-lg-6">
-												<h5><span>-35℃至-30℃</span></h5>
+											
+											<div class="col-lg-2">
+												<h5><span>-35℃</span></h5>
 												<table border="0" cellspacing="" cellpadding="">
-													<tr><td><span>二次侧低温设定</span><input type="text" id="" value="65" data-type="0"/><span>℃</span></td><td><span>二次侧高温设定</span><input type="text" id="" value="60" data-type="0" class="tepOne"/><span>℃</span></td></tr>
+													<tr>
+														<td><span>二次供水温度</span><input type="text" id="" value="" data-type="0"/><span>℃</span></td>
+														<!--<td><span>二次侧低温设定</span><input type="text" id="" value="" data-type="0" class="tepOne"/><span>℃</span></td>-->
+													</tr>
 												</table>
 											</div>
-											<div class="col-lg-6">
-												<h5><span>-30℃至-25℃</span></h5>
+											
+											<div class="col-lg-2">
+												<h5><span>-25℃</span></h5>
 												<table border="0" cellspacing="" cellpadding="">
-													<tr><td><span>二次侧低温设定</span><input type="text" id="" value="60" class="tepOne"/><span>℃</span></td><td><span>二次侧高温设定</span><input type="text" id="" value="52" data-type="0" class="tepTwo"/><span>℃</span></td></tr>
-												</table>
-											</div>
-										</div>
-										<div>
-											<div class="col-lg-6">
-												<h5><span>-25℃至-20℃</span></h5>
-												<table border="0" cellspacing="" cellpadding="">
-													<tr><td><span>二次侧低温设定</span><input type="text" id="" value="52" class="tepTwo"/><span>℃</span></td><td><span>二次侧高温设定</span><input type="text" id="" value="48" data-type="0" class="tepThree"/><span>℃</span></td></tr>
-												</table>
-											</div>
-											<div class="col-lg-6">
-												<h5><span>-20℃至-15℃</span></h5>
-												<table border="0" cellspacing="" cellpadding="">
-													<tr><td><span>二次侧低温设定</span><input type="text" id="" value="48" class="tepThree"/><span>℃</span></td><td><span>二次侧高温设定</span><input type="text" id="" value="43" data-type="0" class="tepFour"/><span>℃</span></td></tr>
+													<tr>
+														<!--<td><span>二次侧高温设定</span><input type="text" id="" value="" class="tepOne"/><span>℃</span></td>-->
+														<td><span>二次供水温度</span><input type="text" id="" value="" data-type="0" class="tepTwo"/><span>℃</span></td>
+													</tr>
 												</table>
 											</div>
 										</div>
 										<div>
-											<div class="col-lg-6">
-												<h5><span>-15℃至-10℃</span></h5>
+											<div class="col-lg-2">
+												<h5><span>-15℃</span></h5>
 												<table border="0" cellspacing="" cellpadding="">
-													<tr><td><span>二次侧低温设定</span><input type="text" id="" value="43"  class="tepFour"/><span>℃</span></td><td><span>二次侧高温设定</span><input type="text" id="" value="30" data-type="0"/><span>℃</span></td></tr>
+													<tr>
+														<!--<td><span>二次侧高温设定</span><input type="text" id="" value="" class="tepTwo"/><span>℃</span></td>-->
+														<td><span>二次供水温度</span><input type="text" id="" value="" data-type="0" class="tepThree"/><span>℃</span></td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-lg-2">
+												<h5><span>-5℃</span></h5>
+												<table border="0" cellspacing="" cellpadding="">
+													<tr>
+														<!--<td><span>二次侧高温设定</span><input type="text" id="" value="" class="tepThree"/><span>℃</span></td>-->
+														<td><span>二次供水温度</span><input type="text" id="" value="" data-type="0" class="tepFour"/><span>℃</span></td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div>
+											<div class="col-lg-2">
+												<h5><span>5℃</span></h5>
+												<table border="0" cellspacing="" cellpadding="">
+													<tr>
+														<!--<td><span>二次侧高温设定</span><input type="text" id="" value="" data-type="0"/><span>℃</span></td>-->
+														<td><span>二次供水温度</span><input type="text" id="" value="" data-type="0" class="tepOne"/><span>℃</span></td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-lg-2">
+												<h5><span>20℃</span></h5>
+												<table border="0" cellspacing="" cellpadding="">
+													<tr>
+														<!--<td><span>二次侧高温设定</span><input type="text" id="" value=""  class="tepFour"/><span>℃</span></td>-->
+														<td><span>二次供水温度</span><input type="text" id="" value="" data-type="0"/><span>℃</span></td>
+													</tr>
 												</table>
 											</div>
 										</div>
 										<input type="button" id="changeCharts" value="完成" />
 									</div>
 									
-									
-									<!--<div class="WDSD_contentTop">
-										<span><img src="common/images/WDSD3.gif"/>二次供水设定</span>
-										<span><img src="common/images/WDSD1.gif"/>室外温度</span>
-									</div>
-									<div class="WDSD_contentBottom">
-										<div>
-											<span><img src="common/images/WDSD1.gif"/></span>
-											<span><img src="common/images/WDSD1.gif"/></span>
-											<span><img src="common/images/WDSD1.gif"/></span>
-											<span><img src="common/images/WDSD1.gif"/></span>
-											<span><img src="common/images/WDSD1.gif"/></span>
-											<span><img src="common/images/WDSD1.gif"/></span>
-										</div>
-										<div>
-											<img src="common/images/WDSD2.png" />
-										</div>
-										<div>
-											<span><img src="common/images/WDSD3.gif"/><i>-35</i><i class="GSWD">65</i><i class="KD">0</i></span>
-											<span><img src="common/images/WDSD3.gif"/><i>-25</i><i class="GSWD">60</i><i class="KD">20</i></span>
-											<span><img src="common/images/WDSD3.gif"/><i>-15</i><i class="GSWD">55</i><i class="KD">40</i></span>
-											<span><img src="common/images/WDSD3.gif"/><i>-5</i><i class="GSWD">50</i><i class="KD">60</i></span>
-											<span><img src="common/images/WDSD3.gif"/><i>5</i><i class="GSWD">45</i><i class="KD">80</i></span>
-											<span><img src="common/images/WDSD3.gif"/><i>15</i><i class="GSWD">40</i><i class="KD">100</i></span>
-										</div>
-									</div>-->
-
-									<!--<div class="WDSD_contentTepsd">
-										<h5>温度</h5>
-										<div class="WDSD_contentTepsdFirst">
-											<p>
-												<span>室外温度</span>
-												<input type="text" id="" value="-35" disabled="disabled" />℃
-											</p>
-											<p>
-												<span>位置</span>
-												<input type="text" id="" value="0" disabled="disabled" />%
-
-											</p>
-										</div>
-										<div class="WDSD_contentTepsdLast">
-											<p>
-												<span>二次供水设定温度</span>
-												<input type="text" id="" value="65" class="changeGSWD" />℃
-											</p>
-											<p>
-												<span>位置</span>
-												<input type="text" id="" value="0" disabled="disabled" />%
-											</p>
-											<input type="button" id="chartsShow" value="完成" />
-										</div>
-									</div>-->
 									<div class="JCSJ_content_bottom_TOP_left">
 										<div class="">
-											<h5>二次供水温度设定曲线</h5>
+											<h5>二次侧温度设定曲线</h5>
 											<div id="main"></div>
 										</div>
 
@@ -573,8 +550,8 @@
 													<td>-25℃</td>
 													<td>-15℃</td>
 													<td>-5℃</td>
-													<td>-5℃</td>
-													<td>15℃</td>
+													<td>5℃</td>
+													<td>20℃</td>
 												</tr>
 												<tr class="alltr">
 													<td class="GSWDchange">供水温度</td>
@@ -590,387 +567,198 @@
 									</div>
 
 									<div class="JCSJ_content_bottom_TOP_bottom">
-										<h5>一次侧启泵温度设置</h5>
+										<h5>一次侧防冻温度设置</h5>
 										<p>
-											启泵温度<input type="text" id="" value="" />℃
+											防冻温度<input type="text" id="YCC_fdwd" value="" />℃
 										</p>
-										<input type="button" id="" value="完成" />
+										<input type="button" id="YCC_fdwd_finish" value="完成" />
 									</div>
 
 									<div class="JCSJ_content_bottom_TOP_bottom">
 										<h5>特别时间段设定温度</h5>
 										<p>
-											<span>上学温度</span>
-											<input type="text" id="" value="" />℃
-										</p>
-										<p>
-											<span>放学温度</span>
-											<input type="text" id="" value="" />℃
+											<span>下课温度</span>
+											<input type="text" id="afterclass" value="" />℃
 										</p>
 										<p>
 											<span>周末温度</span>
-											<input type="text" id="" value="" />℃
+											<input type="text" id="week" value="" />℃
 										</p>
 										<p>
 											<span>假期温度</span>
-											<input type="text" id="" value="" />℃
+											<input type="text" id="holiday" value="" />℃
 										</p>
-										<input type="button" id="" value="完成" />
+										<input type="button" id="classtime_finish" value="完成" />
 									</div>
 
 								</div>
 
-								<div class="XXSJSD_contentstop">
-									<h5>休息时间设置</h5>
-									<div>
-										<p><i>假期段一</i></p>
-										<div class="col-lg-6">
-											<span>开始时间</span>
-											<select name="">
-												<option value="">2017年</option>
-												<option value="">2018年</option>
-												<option value="">2019年</option>
-											</select>
-											<select name="">
-												<option value="">1月</option>
-												<option value="">2月</option>
-												<option value="">3月</option>
-												<option value="">4月</option>
-												<option value="">5月</option>
-												<option value="">6月</option>
-												<option value="">7月</option>
-												<option value="">8月</option>
-												<option value="">9月</option>
-												<option value="" selected="selected">10月</option>
-												<option value="">11月</option>
-												<option value="">12月</option>
-											</select>
-											<select name="">
-												<option value="">1日</option>
-												<option value="">2日</option>
-												<option value="">3日</option>
-												<option value="">4日</option>
-												<option value="">5日</option>
-												<option value="">6日</option>
-												<option value="">7日</option>
-												<option value="">8日</option>
-												<option value="">9日</option>
-												<option value="">10日</option>
-												<option value="">11日</option>
-												<option value="">12日</option>
-												<option value="">13日</option>
-												<option value="">14日</option>
-												<option value="" selected="selected">15日</option>
-												<option value="">16日</option>
-												<option value="">17日</option>
-												<option value="">18日</option>
-												<option value="">19日</option>
-												<option value="">20日</option>
-												<option value="">21日</option>
-												<option value="">22日</option>
-												<option value="">23日</option>
-												<option value="">24日</option>
-												<option value="">25日</option>
-												<option value="">26日</option>
-												<option value="">27日</option>
-												<option value="">28日</option>
-												<option value="">29日</option>
-												<option value="">30日</option>
-												<option value="">31日</option>
-											</select>
-										</div>
-										<div class="col-lg-6">
-											<span>结束时间</span>
-											<select name="">
-												<option value="">2017年</option>
-												<option value="">2018年</option>
-											</select>
-											<select name="">
-												<option value="">1月</option>
-												<option value="">2月</option>
-												<option value="" selected="selected">3月</option>
-												<option value="">4月</option>
-												<option value="">5月</option>
-												<option value="">6月</option>
-												<option value="">7月</option>
-												<option value="">8月</option>
-												<option value="">9月</option>
-												<option value="">10月</option>
-												<option value="">11月</option>
-												<option value="">12月</option>
-											</select>
-											<select name="">
-												<option value="">1日</option>
-												<option value="">2日</option>
-												<option value="">3日</option>
-												<option value="">4日</option>
-												<option value="">5日</option>
-												<option value="">6日</option>
-												<option value="">7日</option>
-												<option value="">8日</option>
-												<option value="">9日</option>
-												<option value="">10日</option>
-												<option value="">11日</option>
-												<option value="">12日</option>
-												<option value="">13日</option>
-												<option value="">14日</option>
-												<option value="" selected="selected">15日</option>
-												<option value="">16日</option>
-												<option value="">17日</option>
-												<option value="">18日</option>
-												<option value="">19日</option>
-												<option value="">20日</option>
-												<option value="">21日</option>
-												<option value="">22日</option>
-												<option value="">23日</option>
-												<option value="">24日</option>
-												<option value="">25日</option>
-												<option value="">26日</option>
-												<option value="">27日</option>
-												<option value="">28日</option>
-												<option value="">29日</option>
-												<option value="">30日</option>
-												<option value="">31日</option>
-											</select>
-										</div>
-										<input type="button" id="" value="完成" />
-									</div>
-									<div>
-										<p><i>假期段二</i></p>
-										<div class="col-lg-6">
-											<span>开始时间</span>
-											<select name="">
-												<option value="">2017年</option>
-												<option value="">2018年</option>
-												<option value="">2019年</option>
-											</select>
-											<select name="">
-												<option value="">1月</option>
-												<option value="">2月</option>
-												<option value="">3月</option>
-												<option value="">4月</option>
-												<option value="">5月</option>
-												<option value="">6月</option>
-												<option value="">7月</option>
-												<option value="">8月</option>
-												<option value="">9月</option>
-												<option value="" selected="selected">10月</option>
-												<option value="">11月</option>
-												<option value="">12月</option>
-											</select>
-											<select name="">
-												<option value="">1日</option>
-												<option value="">2日</option>
-												<option value="">3日</option>
-												<option value="">4日</option>
-												<option value="">5日</option>
-												<option value="">6日</option>
-												<option value="">7日</option>
-												<option value="">8日</option>
-												<option value="">9日</option>
-												<option value="">10日</option>
-												<option value="">11日</option>
-												<option value="">12日</option>
-												<option value="">13日</option>
-												<option value="">14日</option>
-												<option value="" selected="selected">15日</option>
-												<option value="">16日</option>
-												<option value="">17日</option>
-												<option value="">18日</option>
-												<option value="">19日</option>
-												<option value="">20日</option>
-												<option value="">21日</option>
-												<option value="">22日</option>
-												<option value="">23日</option>
-												<option value="">24日</option>
-												<option value="">25日</option>
-												<option value="">26日</option>
-												<option value="">27日</option>
-												<option value="">28日</option>
-												<option value="">29日</option>
-												<option value="">30日</option>
-												<option value="">31日</option>
-											</select>
-										</div>
-										<div class="col-lg-6">
-											<span>结束时间</span>
-											<select name="">
-												<option value="">2017年</option>
-												<option value="">2018年</option>
-											</select>
-											<select name="">
-												<option value="">1月</option>
-												<option value="">2月</option>
-												<option value="" selected="selected">3月</option>
-												<option value="">4月</option>
-												<option value="">5月</option>
-												<option value="">6月</option>
-												<option value="">7月</option>
-												<option value="">8月</option>
-												<option value="">9月</option>
-												<option value="">10月</option>
-												<option value="">11月</option>
-												<option value="">12月</option>
-											</select>
-											<select name="">
-												<option value="">1日</option>
-												<option value="">2日</option>
-												<option value="">3日</option>
-												<option value="">4日</option>
-												<option value="">5日</option>
-												<option value="">6日</option>
-												<option value="">7日</option>
-												<option value="">8日</option>
-												<option value="">9日</option>
-												<option value="">10日</option>
-												<option value="">11日</option>
-												<option value="">12日</option>
-												<option value="">13日</option>
-												<option value="">14日</option>
-												<option value="" selected="selected">15日</option>
-												<option value="">16日</option>
-												<option value="">17日</option>
-												<option value="">18日</option>
-												<option value="">19日</option>
-												<option value="">20日</option>
-												<option value="">21日</option>
-												<option value="">22日</option>
-												<option value="">23日</option>
-												<option value="">24日</option>
-												<option value="">25日</option>
-												<option value="">26日</option>
-												<option value="">27日</option>
-												<option value="">28日</option>
-												<option value="">29日</option>
-												<option value="">30日</option>
-												<option value="">31日</option>
-											</select>
-										</div>
-										<input type="button" id="" value="完成" />
-									</div>
-									<div>
-										<p><i>假期段三</i></p>
-										<div class="col-lg-6">
-											<span>开始时间</span>
-											<select name="">
-												<option value="">2017年</option>
-												<option value="">2018年</option>
-												<option value="">2019年</option>
-											</select>
-											<select name="">
-												<option value="">1月</option>
-												<option value="">2月</option>
-												<option value="">3月</option>
-												<option value="">4月</option>
-												<option value="">5月</option>
-												<option value="">6月</option>
-												<option value="">7月</option>
-												<option value="">8月</option>
-												<option value="">9月</option>
-												<option value="" selected="selected">10月</option>
-												<option value="">11月</option>
-												<option value="">12月</option>
-											</select>
-											<select name="">
-												<option value="">1日</option>
-												<option value="">2日</option>
-												<option value="">3日</option>
-												<option value="">4日</option>
-												<option value="">5日</option>
-												<option value="">6日</option>
-												<option value="">7日</option>
-												<option value="">8日</option>
-												<option value="">9日</option>
-												<option value="">10日</option>
-												<option value="">11日</option>
-												<option value="">12日</option>
-												<option value="">13日</option>
-												<option value="">14日</option>
-												<option value="" selected="selected">15日</option>
-												<option value="">16日</option>
-												<option value="">17日</option>
-												<option value="">18日</option>
-												<option value="">19日</option>
-												<option value="">20日</option>
-												<option value="">21日</option>
-												<option value="">22日</option>
-												<option value="">23日</option>
-												<option value="">24日</option>
-												<option value="">25日</option>
-												<option value="">26日</option>
-												<option value="">27日</option>
-												<option value="">28日</option>
-												<option value="">29日</option>
-												<option value="">30日</option>
-												<option value="">31日</option>
-											</select>
-										</div>
-										<div class="col-lg-6">
-											<span>结束时间</span>
-											<select name="">
-												<option value="">2017年</option>
-												<option value="">2018年</option>
-											</select>
-											<select name="">
-												<option value="">1月</option>
-												<option value="">2月</option>
-												<option value="" selected="selected">3月</option>
-												<option value="">4月</option>
-												<option value="">5月</option>
-												<option value="">6月</option>
-												<option value="">7月</option>
-												<option value="">8月</option>
-												<option value="">9月</option>
-												<option value="">10月</option>
-												<option value="">11月</option>
-												<option value="">12月</option>
-											</select>
-											<select name="">
-												<option value="">1日</option>
-												<option value="">2日</option>
-												<option value="">3日</option>
-												<option value="">4日</option>
-												<option value="">5日</option>
-												<option value="">6日</option>
-												<option value="">7日</option>
-												<option value="">8日</option>
-												<option value="">9日</option>
-												<option value="">10日</option>
-												<option value="">11日</option>
-												<option value="">12日</option>
-												<option value="">13日</option>
-												<option value="">14日</option>
-												<option value="" selected="selected">15日</option>
-												<option value="">16日</option>
-												<option value="">17日</option>
-												<option value="">18日</option>
-												<option value="">19日</option>
-												<option value="">20日</option>
-												<option value="">21日</option>
-												<option value="">22日</option>
-												<option value="">23日</option>
-												<option value="">24日</option>
-												<option value="">25日</option>
-												<option value="">26日</option>
-												<option value="">27日</option>
-												<option value="">28日</option>
-												<option value="">29日</option>
-												<option value="">30日</option>
-												<option value="">31日</option>
-											</select>
-										</div>
-										<input type="button" id="" value="完成" />
-									</div>
-								</div>
+								
 
 								<div class="XXSJSD_content">
 									<h5>休息时间设置</h5>
-									<div id='schedule-box' class="boxshaw">
-
+									<p><span><span class="cld_year"></span>-<span class="cld_year3"></span>供热季</span></p>
+									<div class="XXSJSD_contentDate col-lg-4">
+										<h6 class="riliText"><span class="cld_year _year"></span>年<span class="cld_month _month">11</span>月</h6>
+										<div class="cld_table">
+										    <table>
+										    	<thead>
+										    		<tr>
+										    			<th>周日</th>
+										    			<th>周一</th>
+										    			<th>周二</th>
+										    			<th>周三</th>
+										    			<th>周四</th>
+										    			<th>周五</th>
+										    			<th>周六</th>
+										    		</tr>
+										    	</thead>
+										        <tbody>
+										
+										        </tbody>
+										    </table>
+										    <input type="button" id="cld_table_finish" value="保存设置" />
+										</div>
 									</div>
-
+									
+									<div class="XXSJSD_contentDate col-lg-4">
+										<h6 class="riliText"><span class="cld_year2 _year"></span>年<span class="cld_month2 _month">12</span>月</h6>
+										<div class="cld_table2">
+										    <table>
+										    	<thead>
+										    		<tr>
+										    			<th>周日</th>
+										    			<th>周一</th>
+										    			<th>周二</th>
+										    			<th>周三</th>
+										    			<th>周四</th>
+										    			<th>周五</th>
+										    			<th>周六</th>
+										    		</tr>
+										    	</thead>
+										        <tbody>
+										
+										        </tbody>
+										    </table>
+										    <input type="button" id="cld_table2_finish" value="保存设置" />
+										</div>
+									</div>
+									
+									<div class="XXSJSD_contentDate col-lg-4">
+										<h6 class="riliText"><span class="cld_year3 _year"></span>年<span class="cld_month3 _month">01</span>月</h6>
+										<div class="cld_table3">
+										    <table>
+										    	<thead>
+										    		<tr>
+										    			<th>周日</th>
+										    			<th>周一</th>
+										    			<th>周二</th>
+										    			<th>周三</th>
+										    			<th>周四</th>
+										    			<th>周五</th>
+										    			<th>周六</th>
+										    		</tr>
+										    	</thead>
+										        <tbody>
+										
+										        </tbody>
+										    </table>
+										    <input type="button" id="cld_table3_finish" value="保存设置" />
+										</div>
+									</div>
+									
+									<div class="XXSJSD_contentDate col-lg-4">
+										<h6 class="riliText"><span class="cld_year4 _year"></span>年<span class="cld_month4 _month">02</span>月</h6>
+										<div class="cld_table4">
+										    <table>
+										    	<thead>
+										    		<tr>
+										    			<th>周日</th>
+										    			<th>周一</th>
+										    			<th>周二</th>
+										    			<th>周三</th>
+										    			<th>周四</th>
+										    			<th>周五</th>
+										    			<th>周六</th>
+										    		</tr>
+										    	</thead>
+										        <tbody>
+										
+										        </tbody>
+										        
+										    </table>
+										    <input type="button" id="cld_table4_finish" value="保存设置" />
+										</div>
+									</div>
+									
+									<div class="XXSJSD_contentDate col-lg-4">
+										<h6 class="riliText"><span class="cld_year5 _year"></span>年<span class="cld_month5 _month">03</span>月</h6>
+										<div class="cld_table5">
+										    <table>
+										    	<thead>
+										    		<tr>
+										    			<th>周日</th>
+										    			<th>周一</th>
+										    			<th>周二</th>
+										    			<th>周三</th>
+										    			<th>周四</th>
+										    			<th>周五</th>
+										    			<th>周六</th>
+										    		</tr>
+										    	</thead>
+										        <tbody>
+										
+										        </tbody>
+										    </table>
+										    <input type="button" id="cld_table5_finish" value="保存设置" />
+										</div>
+									</div>
+									
+									
+									<div class="changeMS">
+										<div class="changeMS_center">
+											<span><img src="common/images/quxiao.png"/></span>
+											<p data-type='0'><img src="common/images/shangxue.png"/>上学</p>
+											<p data-type='1'><img src="common/images/jiaqi.png"/>假期</p>
+											<p data-type='2'><img src="common/images/zhoumo.png"/>周末</p>
+											<input type="button" id="cancel_bth" value="取消" />
+											<input type="button" id="finish_btn" value="完成" />
+										</div>
+									</div>
+								
+									<div class="changeSK">
+										<div class="changeSK_center">
+											<h6>修改上学时间</h6>
+											<div>
+												<p>上学时间</p>
+												<select>
+													<option value="" selected="selected">07</option>
+													<option value="">08</option>
+												</select>
+												<select>
+													<option value="" selected="selected">00</option>
+													<option value="">30</option>
+												</select>
+											</div>
+											<div>
+												<p>放学时间</p>
+												<select>
+													<option value="" selected="selected">17</option>
+													<option value="">18</option>
+													
+												</select>
+												<select>
+													<option value="" >00</option>
+													<option value="" selected="selected">30</option>
+												</select>
+											</div>
+											<input type="button" id="changeSKcancel_bth" value="取消" />
+											<input type="button" id="changeSKfinish_btn" value="完成" />
+										</div>
+									</div>	
+									
 								</div>
-								<div class="XXSJSD_contents">
+								<!--<div class="XXSJSD_contents">
 									<h5>供热起止时间设置</h5>
 									<div>
 										<p></p>
@@ -1082,44 +870,42 @@
 											</select>
 										</div>
 									</div>
-
 									<input type="button" id="" value="完成" />
-								</div>
-								<div class="XXSJSD_contents">
+								</div>-->
+								<div class="XXSJSD_contents" style="display: none;">
 									<h5>上学放学时间设置</h5>
-									<div>
+									<div class="getTime">
 										<p></p>
 										<div class="col-lg-6">
-											<select name="">
+											<select name="telTime">
 												<option value="">上学</option>
 											</select>
-											<select name="">
-												<option value="">07时</option>
-												<option value="">08时</option>
+											<select name="" id="SK_time1">
+												<option value="07">07</option>
+												<option value="08">08</option>
 											</select>
-											<select name="">
-												<option value="">00分</option>
-												<option value="">30分</option>
+											<select name="" id="SK_time2">
+												<option value="00">00</option>
+												<option value="30">30</option>
 											</select>
 										</div>
 										<div class="col-lg-6">
-											<select name="">
+											<select name="telTime">
 												<option value="">放学</option>
 											</select>
-											<select name="">
-												<option value="">14时</option>
-												<option value="">15时</option>
+											<select name=""  id="SK_time3">
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="23">23</option>
 											</select>
-											<select name="">
-												<option value="">00分</option>
-												<option value="">30分</option>
+											<select name=""  id="SK_time4">
+												<option value="00">00</option>
+												<option value="30">30</option>
 											</select>
 										</div>
 									</div>
-
-									<input type="button" id="" value="完成" />
+									<input type="button" id="postTime" value="完成" />
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -1147,7 +933,5 @@
 		<script src="dist/js/demo.js"></script>
 		<script src="common/js/common.js"></script>
 		<script type="text/javascript" src="common/js/WDSJ.js"></script>
-		<script type="text/javascript" src="common/js/schedule.js"></script>
 	</body>
-
 </html>

@@ -31,13 +31,17 @@
         <ul class="nav navbar-nav">
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#">欢迎您 <span class="header-name"> </span></a>
+            <a href="#"><span id="status"></span></a>
           </li>
+          
           <li>
             <a href="#"><span class="header-time"></span></a>
           </li>
           <li>
             <a href="#"><span class="header-tem">0</span>℃</a>
+          </li>
+          <li>
+            <a href="#">欢迎您 <span class="header-name"> </span></a>
           </li>
           <li>
             <a href="#"><span class="header-btn">退出</span></a>
@@ -59,8 +63,8 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu  scroll-menu" style="height: 500px; overflow-y: scroll; ">
-            <li>
+          <ul class="treeview-menu  scroll-menu" style="height: 500px;overflow-y: scroll;">
+            <li data-userId="100280" data-deviceId = "2051">
             	<a href="#" class=""><i class="fa fa-map-marker"></i>易县职业技术教育中心
             		<span class="pull-right-container">
               		<i class="fa fa-angle-left pull-right"></i>
@@ -430,6 +434,7 @@
       </ul>
     </section>
   </aside>
+
   <div class="content-wrapper" style="height: 560px;">
   	<div class="content">
   		<div class="content_top">
@@ -455,33 +460,34 @@
 									<p><i class="fa fa-circle-o"></i>阀门限位参数设置</p>
 									<p><span>最小阀门开度</span><input type="text" />%</p>
 									<p><span>最大阀门开度</span><input type="text" />%</p>
+									<input type="button" id="" value="保存" />
 								</div>
 								
 								<h5>PID调节设置</h5>
 								<div class="CSSD_contentBOTTOM">
-									<p><span>比例增热</span><input type="text" />%</p>
-									<p><span>积分时间</span><input type="text" />min</p>
+									<p><span>正反设定</span><input type="text" id="PID_zfsd"/></p>
+									<p><span>比例增益</span><input type="text" id="PID_blzy"/></p>
 								</div>
 				  			<div class="CSSD_contentBOTTOM">
-									<p><span>采样时间</span><input type="text" />min</p>
-									<p><span>微分时间</span><input type="text" />min</p>
+									<p><span>采样时间</span><input type="text" id="PID_cysj"/></p>
+									<p><span>积分时间</span><input type="text" id="PID_jfsj"/></p>
+									<input type="button" id="PID_sz" value="保存" />
 								</div>
 								
 								<h5>水泵状态设置</h5>
 								<div class="CSSD_content_last">
-									<div>
-									<p>一次侧水泵</p>
+									<!--<div>
+									<p>一次侧泵</p>
 									<table border="1" cellspacing="" cellpadding="">
-										<tr><td>1#泵状态</td><td><img src="common/images/kaiguan2.png"/></td></tr>
-										<tr><td>2#泵状态</td><td><img src="common/images/kaiguan.png"/></td></tr>
+										<tr><td>一次侧泵启停</td><td id="SB_1"><img src="common/images/kaiguan.png"  data-type = "0"/></td></tr>
 									</table>
-								</div>
+								</div>-->
 				  			<div>
-									<p>二次侧水泵</p>
+									<p></p>
 									<table border="1" cellspacing="" cellpadding="">
-										<tr><td>1#泵状态</td><td> <img src="common/images/kaiguan2.png"/></td></tr>
-										<tr><td>2#泵状态</td><td> <img src="common/images/kaiguan.png"/></td></tr>
+										<tr><td>二次侧泵启停</td><td id="SB_2"></td></tr>
 									</table>
+									<input type="button" id="SB_sz" value="保存" />
 								</div>
 								</div>
 						</div>
